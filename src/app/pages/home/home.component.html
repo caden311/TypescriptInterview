@@ -1,2 +1,7 @@
 <app-header></app-header>
 
+<app-table (rowSelected)="rowSelected($event)"></app-table>
+
+<ng-container *ngIf="selectedRecord">
+    <app-table-details [record]="selectedRecord"></app-table-details>
+</ng-container>

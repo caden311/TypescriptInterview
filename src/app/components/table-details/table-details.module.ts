@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { TableDetailsComponent } from './table-details.component';
+import { MatIconModule } from '@angular/material/icon';
 
 
 
@@ -9,7 +10,11 @@ import { TableDetailsComponent } from './table-details.component';
     TableDetailsComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    MatIconModule
+  ],
+  exports: [
+    TableDetailsComponent
   ]
 })
 export class TableDetailsModule { }

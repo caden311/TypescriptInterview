@@ -1,3 +1,48 @@
 .table-details-container {
-    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 100px;
+    background-color: whitesmoke;
+    border: 1px solid var(--cen-primary);
+    height: 200px;
+    box-sizing: border-box;
+    padding: 0 20px;
+        .icon {
+            flex: 1;
+            font-size: 80pt;
+            bottom: 39px;
+            position: relative;
+            color: lightgray;
+        }
+        .name {
+            flex: 2;
+            display: flex;
+            flex-direction: column;
+            .name-container {
+                font-size: 16pt;
+                font-weight: 500;
+                .first {
+                    margin-right: 3px;
+                }
+            }
+           
+            .pin {
+                color: darkgray;
+            }
+        }
+        .col {
+            flex: 2;
+            display: flex;
+            flex-direction: column;
+            .col-header {
+                font-weight: 500;
+                font-size: 14pt;
+                color: var(--cen-primary-light)
+            }
+            .col-value {
+                color: darkgray;
+            }
+        }
 }

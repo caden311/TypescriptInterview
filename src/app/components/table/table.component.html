@@ -1,3 +1,36 @@
 <div class="table-container">
 
+    <h2 class="header">Customer Table</h2>
+
+    <table mat-table [dataSource]="records" class="table">
+            
+    <ng-container matColumnDef="FirstName">
+        <th mat-header-cell *matHeaderCellDef> First Name </th>
+        <td mat-cell *matCellDef="let element"> {{element.FirstName}} </td>
+    </ng-container>
+
+    <!-- Name Column -->
+    <ng-container matColumnDef="LastName" >
+        <th mat-header-cell *matHeaderCellDef> Last Name </th>
+        <td mat-cell *matCellDef="let element"> {{element.LastName}} </td>
+    </ng-container>
+
+    <!-- Weight Column -->
+    <ng-container matColumnDef="Age" >
+        <th class="age" mat-header-cell *matHeaderCellDef> Age </th>
+        <td mat-cell *matCellDef="let element"> {{element.Age}} </td>
+    </ng-container>
+
+    <!-- Symbol Column -->
+    <ng-container matColumnDef="Details" >
+        <th class="details" mat-header-cell *matHeaderCellDef> Details </th>
+        <td mat-cell *matCellDef="let element"> 
+            <button mat-raised-button color="primary" (click)="viewDetails(element)">View Details</button>
+        </td>
+    </ng-container>
+
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+    </table>
+
 </div>
