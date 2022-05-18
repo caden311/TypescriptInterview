@@ -1,16 +1,18 @@
 export type CustomerRecord = {
     FirstName: string;
     LastName: string;
+    NickName: string;
     Age: number;
     City: string;
     Country: string;
     State: string;
     PinCode: number;
 }
-export const CustomerRecords: CustomerRecord[] = [
+export const CUSTOMER_RECORDS: CustomerRecord[] = [
     {
         FirstName: 'Bill',
         LastName: 'Gates',
+        NickName: 'Good ol\' Bill',
         Age: 66,
         City: 'Seattle',
         State: 'WA',
@@ -20,6 +22,7 @@ export const CustomerRecords: CustomerRecord[] = [
     {
         FirstName: 'Mark',
         LastName: 'Zuckerberg',
+        NickName: 'Zuck',
         Age: 38,
         City: 'White Plains',
         State: 'NY',
@@ -29,6 +32,7 @@ export const CustomerRecords: CustomerRecord[] = [
     {
         FirstName: 'Ken',
         LastName: 'Thompson',
+        NickName: 'Kenny',
         Age: 79,
         City: 'New Orleans',
         State: 'LA',
@@ -38,6 +42,7 @@ export const CustomerRecords: CustomerRecord[] = [
     {
         FirstName: 'Linus',
         LastName: 'Torvalds',
+        NickName: 'Linny',
         Age: 52,
         City: 'Helsinki',
         State: '',
@@ -47,6 +52,7 @@ export const CustomerRecords: CustomerRecord[] = [
     {
         FirstName: 'Niklaus',
         LastName: 'Wirth',
+        NickName: 'Nik',
         Age: 88,
         City: 'Winterthur',
         State: '',
