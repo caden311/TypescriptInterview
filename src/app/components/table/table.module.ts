@@ -10,6 +10,9 @@ import { TableComponent } from './table.component';
   ],
   imports: [
     CommonModule
+  ],
+  exports: [
+    TableComponent
   ]
 })
 export class TableModule { }
